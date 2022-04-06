@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.big   {
+    font-size: 2rem;
+}
+
+.tiny {
+    font-size: 0.8rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+.bold   {
+    font-weight: bold;
+}
+
+.font {
+    font-family: cursive;
+}
+
+.styledFont {
+    background-color: lightcyan;
+    color: brown;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#styledImage {
+    border: 1px black solid;
+}
