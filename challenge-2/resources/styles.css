@@ -25,6 +25,7 @@ body{
 
 header {
     background-color: #FDF003;
+    height: 10vh;
 }
 
 nav {
@@ -53,7 +54,7 @@ nav a {
 }
 
 .hero {
-    height: 50vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,8 +126,17 @@ section h3, p {
     #dnd {
         max-width: 300px;
     }
-}
 
+    .links {
+        width: 90%;
+    }
+
+    .links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
 
 
 .languages {
@@ -195,7 +205,7 @@ section h3, p {
 .card img{
     max-width: 40px;
     background-color: #FDF003;
-    opacity: 0.75;
+    opacity: 0.95;
     padding: 0.1rem;
     border-radius: 5px;
     margin: 0.3rem;
@@ -225,16 +235,18 @@ section h3, p {
     align-items: center;
     flex-wrap: wrap;
     max-width: 1000px;
-    background-color: var(--laser-lemon);
+    /* background-color: var(--laser-lemon); */
     margin-bottom: 1rem ;
 }
 
 .links li {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 33%;
-    margin-top: 1rem;
+    width: 30%;
+    min-width: 205px;
+    margin: 1rem;
+    background-color: #FDF003;
 }
 
 .links img {
