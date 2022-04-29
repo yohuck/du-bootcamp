@@ -156,6 +156,7 @@ nav a:hover {
     background-size: cover;
     background-attachment: fixed;
     transition: 0s linear;
+    background-position: center;
     transition-property: background-position;
 }
 
@@ -242,7 +243,7 @@ section h3, p {
 
 @media only screen and (max-width: 698px) {
     .patch {
-        margin-top: -3rem;
+        transform: translateY(-2.5rem);
     }
     #dnd {
         max-width: 300px;
