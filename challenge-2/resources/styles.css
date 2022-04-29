@@ -5,7 +5,7 @@
     --rubik-mono: 'Rubik Mono One', sans-serif;
     --yuji-syuku: 'Yuji Syuku', serif;
 
-    --star-command: #D9F2F7 ;
+    --star-command: #1b7e92 ;
     --space-cadet: #F25F5C;
     --laser-lemon: #FFC107;
     --gainsboro: #345995;
@@ -20,14 +20,14 @@
 
 body{
     font-family: var(--nova-mono);
-    /* background-color: var(--star-command); */
+    background-color: #91a6af;
 }
 
 header {
     /* background-color: #EEEEEE; */
-    /* display: flex;
-    justify-content: space-between; */
-    /* border-bottom: 4px dotted white; */
+    display: flex;
+    justify-content: space-between;
+    border: #ddba9d;
 }
 
 nav {
@@ -36,19 +36,21 @@ nav {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    /* color: #29B6F6; */
-    /* background-color: #FFC107; */
-    /* margin-bottom: 0.4rem; */
+    position:fixed;
+    top: 0;
+    z-index: 20;
+
 }
 
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    gap: 60px;
     list-style: none;
-    background-color: rgba(26, 56, 77, 0.95);
+    background-color: rgba(38, 66, 87, 0.95);
+    /* border-bottom: 5px dotted #FFC107; */
 }
 
 nav li {
@@ -68,7 +70,7 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
+    color: #F25F5C;
 }
 
 .hamburger {
@@ -113,7 +115,7 @@ nav a:hover {
         width: 100%;
         text-align: center;
         transition: 0.5s;
-        border-bottom: 5px solid #FFC107;
+        border-bottom: 4px dotted #FFC107;
         z-index: 5;
         /* border-right: 5px solid #FFC107; */
     }
@@ -157,6 +159,7 @@ nav a:hover {
     transition-property: background-position;
 }
 
+
 h1 {
 
     font-size: var(--step-5);
@@ -185,6 +188,7 @@ section {
     max-width: 1000px;
 }
 
+
 img {
     max-width: 300px;
     margin: 1rem;
@@ -194,8 +198,30 @@ img {
     margin: 1rem;
 }
 
+.projects {
+    background-color: #a9c0cc;
+    width: 100%;
+    padding: 3rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    /* max-width: 1000px; */
+    /* max-width: 1200px; */
+}
+
+.row   {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 section h3, p {
-    margin: 1rem;
+    margin-top: 1rem;
     line-height: 2rem;
 }
 
@@ -215,6 +241,9 @@ section h3, p {
 }
 
 @media only screen and (max-width: 698px) {
+    .patch {
+        margin-top: -1rem;
+    }
     #dnd {
         max-width: 300px;
     }
@@ -241,6 +270,7 @@ section h3, p {
     max-width: 500px;
     margin: 2rem auto;
     width: 50%;
+    background-color: #FFC107;
 }
 
 #dnd {
@@ -295,16 +325,19 @@ section h3, p {
 }
 
 .card img{
-    max-width: 40px;
-    background-color: #FDF003;
-    opacity: 0.95;
+    max-width: 45px;
+    background-size:5px 5px;
+    background-image: repeating-linear-gradient(45deg, #1a384d 0, #6495ac 4px, #B2CAE9 0, #29B6F6 5%);
+    opacity: 0.85;
     padding: 0.1rem;
     border-radius: 5px;
     margin: 0.3rem;
+    border: #FFC107 dotted 3px;
 }
 
 .card h4 {
-    background-color: #FDF003;
+    background-color: #1a384d;
+    color: #FFC107;
     opacity: 0.95;
     border: 4px dotted var(--gainsboro);
     margin-top: -20px;
@@ -313,6 +346,7 @@ section h3, p {
     padding: 0.5rem;
     border-radius: 5px;
     max-width: 240px;
+    text-align: center;
 }
 
 .contact {
@@ -411,4 +445,11 @@ footer h4 {
     border-radius: 20px;
     border: 4px dotted #FFF9C4;
     margin: 1rem;
+
+}
+
+
+.filter-green
+{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
