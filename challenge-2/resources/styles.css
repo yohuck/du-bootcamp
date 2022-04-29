@@ -73,6 +73,8 @@ nav a {
     background-image: url(./pexels-creative-vix-9754.jpg);
     background-size: cover;
     background-attachment: fixed;
+    transition: 0s linear;
+    transition-property: background-position;
 }
 
 h1 {
