@@ -47,6 +47,11 @@ nav li {
     margin: 1rem;
 }
 
+nav a {
+    text-decoration: none;
+    color: var(--gainsboro);
+}
+
 .hero {
     height: 50vh;
     display: flex;
@@ -80,7 +85,7 @@ section {
     width: 95%;
     margin: 1rem auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
@@ -116,6 +121,12 @@ section h3, p {
     
 }
 
+@media only screen and (max-width: 698px) {
+    #dnd {
+        max-width: 300px;
+    }
+}
+
 
 
 .languages {
@@ -132,8 +143,35 @@ section h3, p {
 
 #dnd {
     background-image: url(./character-gen-shot.png);
-    background-size: cover;
     width: calc(900px + 64px);
+}
+
+#beer {
+    background-image: url(./beer-shot.png);
+}
+
+#popper {
+    background-image: url(./popper-toy-shot.png);
+}
+
+#burger {
+    background-image: url(./emoji-menu-shot.png);
+}
+
+#credit {
+    background-image: url(./card-swiper-shot.png);
+}
+
+#tacos {
+    background-image: url(./moyas-shot.png);
+}
+
+#record {
+    background-image: url(./record-button-shot.png);
+}
+
+#hover {
+    background-image: url(./hover-click-shot.png);
 }
 
 .projects {
@@ -151,6 +189,7 @@ section h3, p {
     align-items:flex-end;
     margin-bottom: 3rem;
     border-radius: 5px;
+    background-size: cover;
 }
 
 .card img{
@@ -172,4 +211,46 @@ section h3, p {
     padding: 0.5rem;
     border-radius: 5px;
     max-width: 240px;
+}
+
+.contact {
+    flex-direction: column;
+}
+
+.links ul {
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    background-color: var(--laser-lemon);
+    margin-bottom: 1rem ;
+}
+
+.links li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin-top: 1rem;
+}
+
+.links img {
+    width: 40px;
+    border-radius: 999px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 5rem;
+    background-color: #404E5C;;
+}
+
+footer h4 {
+    color: #FDF003;
 }
