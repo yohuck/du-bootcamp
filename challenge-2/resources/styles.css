@@ -242,7 +242,7 @@ section h3, p {
 
 @media only screen and (max-width: 698px) {
     .patch {
-        margin-top: -1rem;
+        margin-top: -3rem;
     }
     #dnd {
         max-width: 300px;
