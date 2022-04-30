@@ -25,8 +25,10 @@
 h1 {
 
     font-size: var(--step-5);
+    color: #FFC107;
     text-align: center;
-    background-color: #FDF003;
+    background-size:5px 5px;
+    background-image: repeating-linear-gradient(45deg, #1a384d 0, #6495ac 4px, #B2CAE9 0, #29B6F6 5%);
     padding: 0.5rem 1rem;
     font-style: italic;
 }
@@ -57,11 +59,12 @@ h2 {
         /* min-height: 70px; */
         display: flex;
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         position:fixed;
         top: 0;
         z-index: 20;
+        background-color: rgba(38, 66, 87, 0.95);
 
     }
 
@@ -72,12 +75,14 @@ h2 {
         justify-content: center;
         align-items: center;
         list-style: none;
-        background-color: rgba(38, 66, 87, 0.95);
+        max-width: 300px;
+        margin: 0 auto;
+
         /* border-bottom: 5px dotted #FFC107; */
     }
 
     nav li {
-        margin: 2rem;
+        margin: 2rem 4rem;
     }
 
     nav a {
@@ -367,12 +372,13 @@ section h3, p {
     width: 30%;
     min-width: 205px;
     margin: 1rem;
-    background-color: #FDF003;
+    /* background-color: #FDF003; */
 }
 
 .links img {
-    width: 40px;
-    border-radius: 999px;
+    width: 80px;
+    padding: 10px;
+    /* border-radius: 999px; */
 }
 
 footer {
@@ -390,8 +396,8 @@ footer h4 {
 
 
 .foreground{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background-color:#15668b;
     display: flex;
     flex-direction: column;
@@ -405,11 +411,11 @@ footer h4 {
     background-image: repeating-linear-gradient(45deg, #1a384d 0, #6495ac 4px, #B2CAE9 0, #29B6F6 5%);
 }
 
-.foreground h3 {
+.foreground h1 {
     color: #FFC107 ;
-    font-size: 3rem;
-    -webkit-text-stroke: 2px #B3E5FC ;
-    letter-spacing: 0.3rem;
+    font-size: 5rem;
+    -webkit-text-stroke: 1px rgba(38, 66, 87, 0.95) ;
+    letter-spacing: 0.rem;
     line-height: 3rem;
 }
 
@@ -428,9 +434,19 @@ footer h4 {
     border: 4px dotted #FFF9C4;
     margin: 0.2rem;
 }
+.background-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #450952;
+    border-radius: 9px;
+    border: 4px dotted #FFF9C4;
+    margin: 0.05rem;
+    border-radius: 999px;
+}
 
 #eric {
-    letter-spacing: 0.60rem;
+    letter-spacing: 0.4rem;
 }
 
 
@@ -440,7 +456,30 @@ footer h4 {
     border-radius: 20px;
     border: 4px dotted #FFF9C4;
     margin: 1rem;
+}
+.patch-contact {
+    background-color: #EEEEEE;
+    display: flex;
+    border: 5px dotted #FFF9C4;
+    margin: 1rem;
+    border-radius: 999px;
+}
 
+.twitter {
+    background-color: #d3b11b;
+}
+
+.email {
+    background-color: #226572;
+}
+
+.linkedin{
+    background-color: #0077b5;
+}
+
+.pen {
+    background-color: #D66100;
+    color: #1e441e;
 }
 
 @media only screen and (max-width: 764px) {
