@@ -492,6 +492,16 @@ footer h4 {
     .patch {
         /* transform: translateY(-2.5rem); */
     }
+
+    .foreground{
+        width: 200px;
+        height: 200px;
+    }
+
+    .foreground h1{
+        font-size: 3rem;
+
+    }
     #dnd {
         width: 300px;
     }
