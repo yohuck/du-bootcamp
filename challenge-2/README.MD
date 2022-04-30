@@ -1,5 +1,6 @@
 # Eric Lake Portfolio Project
 - This project was completed as the week 2 challenge for DU Bootcamp
+- Live page: https://yohuck.github.io/du-bootcamp/challenge-2
 
 ## Key Features
 - Responsive hamburger navigation for small screenm sizes
