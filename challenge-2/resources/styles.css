@@ -157,6 +157,7 @@ h2 {
             width: 100vw;
             text-align: center;
             transition: top 0.5s;
+            background-color: #1a384d;
             border-bottom: 4px dotted #FFC107;
             z-index: 5;
             /* border-right: 5px solid #FFC107; */
@@ -179,7 +180,7 @@ h2 {
         
     }
 
-    /* Hero Content */
+/* Hero Content */
 .hero {
     height: 100vh;
     display: flex;
@@ -219,6 +220,7 @@ img {
     margin: 1rem;
 }
 
+/* Styling for Project Section */
 .projects {
     background-color: rgba(38, 66, 87, 0.95);
     width: 100%;
@@ -247,34 +249,13 @@ section h3, p {
     line-height: 2rem;
 }
 
-@media only screen and (min-width: 865px) {
-    .bio {
-        width:60%;
-    }
-
-    section img {
-        width: 40%;
-    }
-
-    section {
-        text-align: left;
-    }
-    
-}
-
-/* @media only screen and (max-width: 772) {
-    #dnd {
-        max-width: 615px;
-    }
-    
-} */
 a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
+/* Background images for work section */
 #dnd {
     background-image: url(./character-gen-shot.png);
     width: 100%;
@@ -313,6 +294,7 @@ a {
     margin-top: 5rem;
 }
 
+/* Card styling */
 .card{
     width: 300px;
     height: 300px;
@@ -355,6 +337,27 @@ a {
     text-align: center;
 }
 
+
+.languages {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.dnd-languages {
+    max-width: 900px;
+    justify-self: flex-end;
+}
+
+.mid {
+    max-width: 500px;
+    margin: 2rem auto;
+    width: 50%;
+    background-color: #FFC107;
+}
+
 .card:hover h4{
     background-size:5px 5px;
     background-image: repeating-linear-gradient(45deg, #1a384d 0, #6495ac 4px, #B2CAE9 0, #29B6F6 5%);
@@ -366,7 +369,7 @@ a {
 
 }
 
-
+/* Contact section styling */
 .contact {
     flex-direction: column;
 }
@@ -402,6 +405,8 @@ a {
     /* border-radius: 999px; */
 }
 
+
+/* Footer Styling */
 footer {
     display: flex;
     justify-content: center;
@@ -416,9 +421,10 @@ footer h4 {
 }
 
 
+/* Styling for patch effect */
 .foreground{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color:#15668b;
     display: flex;
     flex-direction: column;
@@ -434,7 +440,7 @@ footer h4 {
 
 .foreground h1 {
     color: #FFC107 ;
-    font-size: 5rem;
+    font-size: 3rem;
     -webkit-text-stroke: 1px rgba(38, 66, 87, 0.95) ;
     letter-spacing: 0.rem;
     line-height: 3rem;
@@ -503,20 +509,9 @@ footer h4 {
     color: #1e441e;
 }
 
+/* Media Query for link patches & latest project */
 @media only screen and (max-width: 764px) {
-    .patch {
-        /* transform: translateY(-2.5rem); */
-    }
 
-    .foreground{
-        width: 200px;
-        height: 200px;
-    }
-
-    .foreground h1{
-        font-size: 3rem;
-
-    }
     #dnd {
         width: 300px;
     }
@@ -533,26 +528,23 @@ footer h4 {
 }
 
 
-.languages {
-    max-width: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-.dnd-languages {
-    max-width: 900px;
-    justify-self: flex-end;
-}
-
-.mid {
-    max-width: 500px;
-    margin: 2rem auto;
-    width: 50%;
-    background-color: #FFC107;
-}
 
 .background-contact:hover {
     background-color: #2d4f7a;
+}
+
+/* media query for bio section */
+@media only screen and (min-width: 865px) {
+    .bio {
+        width:60%;
+    }
+
+    section img {
+        width: 40%;
+    }
+
+    section {
+        text-align: left;
+    }
+    
 }
