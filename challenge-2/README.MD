@@ -14,13 +14,5 @@
 
 
 
-
-<img src="challenge-2/resources/screencapture-127-0-0-1-5501-challenge-2-index-html-2022-05-01-13_32_21.png"
-     alt="Full Page Screenshot"
-     style="float: left; margin-right: 10px;" />
-     
-<img src="challenge-2/resources/screencapture-yohuck-github-io-du-bootcamp-challenge-2-2022-05-01-13_33_02.png"
-     alt="Mobile Page Screenshot"
-     style="float: left; margin-right: 10px;" />
-     
-     
+![screencapture-yohuck-github-io-du-bootcamp-challenge-2-2022-05-01-13_33_02](https://user-images.githubusercontent.com/99624222/166162238-1c9c6723-c579-4907-a366-d82579c9881b.png)
+![screencapture-127-0-0-1-5501-challenge-2-index-html-2022-05-01-13_32_21](https://user-images.githubusercontent.com/99624222/166162240-39af47f2-d04d-4cdf-94af-e4979e672f41.png)
