@@ -15,11 +15,11 @@
 
 
 
-<img src="/resources/screencapture-127-0-0-1-5501-challenge-2-index-html-2022-05-01-13_32_21.png"
+<img src="challenge-2/resources/screencapture-127-0-0-1-5501-challenge-2-index-html-2022-05-01-13_32_21.png"
      alt="Full Page Screenshot"
      style="float: left; margin-right: 10px;" />
      
-<img src="/resources/screencapture-yohuck-github-io-du-bootcamp-challenge-2-2022-05-01-13_33_02.png"
+<img src="challenge-2/resources/screencapture-yohuck-github-io-du-bootcamp-challenge-2-2022-05-01-13_33_02.png"
      alt="Mobile Page Screenshot"
      style="float: left; margin-right: 10px;" />
      
