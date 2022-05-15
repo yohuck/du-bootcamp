@@ -1,9 +1,10 @@
 :root {
   --bg: #86BBD8;
   --neutral: #998888;
-  --alert: #33658A;
-  --bold: #823329;
-  --past: #65A9CD;
+  --alert: rgba(0, 0, 0, 0.202);
+  --future: rgba(68, 116, 146);
+  --past: rgba(80, 82, 82, 0.52);
+  --buttons: rgba(255, 250, 250, 0.442);
 }
 
 *{
@@ -17,8 +18,12 @@ body{
   background-color: var(--bg);
   font-family: 'Roboto Mono', monospace;
 }
+
+
 h1 {
-  margin: 1rem auto;
+  margin: .5rem auto;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 h2 {
@@ -26,22 +31,43 @@ h2 {
   font-size: .7rem;
   padding: 0;
   margin: 0 1rem;
-  color: #86BBD8;
+  color: var(--buttons);
+}
+
+p {
+  font-size: 0.7rem;
 }
 
 header {
-  margin: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  /* max-width: 500px; */
+  /* margin: 0rem 1rem; */
+  text-align: center;
+  /* position: fixed; */
 }
 
+#currentDay {
+  /* max-width: 200px; */
+}
+
+
 .row {
-  width: 100vw;
+  max-width: 1000px;
+  width: 97%;
   display: flex;
   justify-content: space-between;
   height: 10vh;
-  background-color: var(--past);
+  background-color: var(--future);
   /* border-top: 1px solid black;
   border-bottom: 1px solid black; */
-  margin-top: 5px;
+  margin: .5rem auto;
+}
+
+.row:hover, .row:focus {
+  opacity: 0.75;
 }
 
 .block {
@@ -50,24 +76,28 @@ header {
   /* background-color: #ff6961; */
 }
 
-.time {
+.time, .save {
   display: flex;
   background-color: var(--alert);
-  justify-content: baseline;
+  justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   width: 15%;
 }
 
+.time:hover, .save:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
-.save {
+
+/* .save {
   width: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: right;
+  text-align: center;
   background-color: var(--alert);
-}
+} */
 
 /* .jumbotron {
   text-align: center;
@@ -99,7 +129,7 @@ header {
 }
 
 .past {
-  background-color: #608DA9;
+  background-color: var(--past);
   color: white;
 }
 
@@ -107,16 +137,10 @@ header {
   background-color: #ad615d;
   color: white;
 }
-.currentEl {
-  background-color: #833430;
-  color: white;
-}
-.currentHeading {
-  color: #e59a96;
-}
+
 
 .future {
-  background-color: #77dd77;
+  background-color: var(--future);
   color: white;
 }
 

@@ -6,31 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    <title>Work Day Scheduler</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet">
+    <title>Plan Your Day</title>
   </head>
 
   <body>
     <header>
       <div class="container">
-        <h1>Work Day Scheduler</h1>
-        <p>A simple calendar app for scheduling your work day</p>
+        <h1>Calendar.simple</h1>
         <p id="currentDay"></p>
       </div>
     </header>
-    <div class="container">
-      <div class="row past">
-        <div class="time">
-          <h2>9:00 AM</h2>
-        </div>
-        <div class="block">
-        </div>
-        <div class="save">
-          <h2>Save</h2>
-        </div>
-      </div>
-      <div class="row past">
+    <div class="cont">
+      <div class="row" id="09">
         <div class="time">
           <h2>10:00 AM</h2>
         </div>
@@ -40,7 +29,17 @@
           <h2>Save</h2>
         </div>
       </div>
-      <div class="row current">
+      <div class="row" id="10">
+        <div class="time">
+          <h2>10:00 AM</h2>
+        </div>
+        <div class="block">
+        </div>
+        <div class="save">
+          <h2>Save</h2>
+        </div>
+      </div>
+      <div class="row" id="11">
         <div class="time currentEl">
           <h2 class ='currentHeading'>11:00 AM</h2>
         </div>
@@ -50,7 +49,7 @@
           <h2 class="currentHeading">Save</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="12">
         <div class="time">
           <h2>12:00 PM</h2>
         </div>
@@ -60,7 +59,7 @@
           <h2>Save</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="13">
         <div class="time">
           <h2>1:00 PM</h2>
         </div>
@@ -70,7 +69,7 @@
           <h2>Save</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="14">
         <div class="time">
           <h2>2:00 PM</h2>
         </div>
@@ -80,7 +79,7 @@
           <h2>Save</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="15">
         <div class="time">
           <h2>3:00 PM</h2>
         </div>
@@ -90,7 +89,7 @@
           <h2>Save</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="16">
         <div class="time">
           <h2>4:00 PM</h2>
         </div>
@@ -100,9 +99,19 @@
           <h2>Save</h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="17">
         <div class="time">
           <h2>5:00 PM</h2>
+        </div>
+        <div class="block">
+        </div>
+        <div class="save">
+          <h2>Save</h2>
+        </div>
+      </div>
+      <div class="row" id="23">
+        <div class="time">
+          <h2>Late</h2>
         </div>
         <div class="block">
         </div>
@@ -113,5 +122,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
